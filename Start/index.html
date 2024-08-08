@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link rel="stylesheet" href="index.css">
+        <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script src="index.js" type="text/babel"></script><br>
+
+        <h1>Code of this page</h1>
+       <div className="code">
+        <div class="code-window">
+            <div class="title-bar">
+                <button></button>
+                <button></button>
+                <button></button>
+            </div>
+            <div class="code-container">
+                <div class="code">
+                    <span class="comment">// Primeiro elemento</span><br>
+                    <span class="keyword">const</span> Navbar = (<br>
+                    &nbsp;&nbsp;&lt;nav&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Bob's Bistro&lt;/h1&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Menu&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;About&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Contact&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+                    &nbsp;&nbsp;&lt;/nav&gt;<br>
+                    );<br><br>
+    
+                    <span class="comment">// Segundo elemento</span><br>
+                    <span class="keyword">const</span> Title = (<br>
+                    &nbsp;&nbsp;&lt;h1&gt;Title&lt;/h1&gt;<br>
+                    );<br><br>
+    
+                    <span class="comment">// Elemento</span><br>
+                    <span class="keyword">const</span> Subtitle = (<br>
+                    &nbsp;&nbsp;&lt;h2&gt;Subtitle&lt;/h2&gt;<br>
+                    );<br><br>
+    
+                    <span class="comment">// Elemento</span><br>
+                    <span class="keyword">const</span> MainText = (<br>
+                    &nbsp;&nbsp;&lt;p&gt;Main Text&lt;/p&gt;<br>
+                    );<br><br>
+    
+                    <span class="comment">// Todos os elementos</span><br>
+                    <span class="keyword">function</span> Page() {<br>
+                    &nbsp;&nbsp;<span class="keyword">return</span> (<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{Navbar}<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{Title}<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{Subtitle}<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{MainText}<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                    );<br>
+                    }<br><br>
+    
+                    ReactDOM.render(<br>
+                    &nbsp;&nbsp;&lt;Page /&gt;,<br>
+                    document.getElementById(<span class="string">'root'</span>)<br>
+                    );<br>
+                </div>
+            </div>
+        </div>
+       </div>
+    </body>
+</html>
