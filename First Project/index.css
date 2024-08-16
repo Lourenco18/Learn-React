@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    padding-left: 5px; 
 }
 
 
@@ -57,6 +58,7 @@ html, body {
     white-space: pre-wrap;
     background-color: #1e1e1e;
     overflow-x: auto;
+    
 }
 
 .code {
@@ -85,4 +87,22 @@ html, body {
     margin: 20px 0; /* Espaçamento superior e inferior para separação */
     border-radius: 10px; /* Bordas arredondadas */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para efeito de realce */
+    width: 800px; /* Largura do conteúdo */
+}
+
+.nav-items{
+    list-style: none;
+    display: flex;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-items li{
+    padding: 10px;
+}
+.react-image{
+    width: 40px;
+
 }
