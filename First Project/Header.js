@@ -1,6 +1,8 @@
 
-const Header= (
-    <div>
+
+export default function Header() {
+   return(
+      <header>
        <nav className="nav">
          <img className="react-image"src="./react-logo.png" alt="React logo" />
          <ul className="nav-items" >
@@ -10,6 +12,8 @@ const Header= (
         </ul>
        </nav>
   
-    </div>
-   );
-   export default Header;
+       </header>
+   )
+}
+    
+

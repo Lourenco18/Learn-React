@@ -107,30 +107,35 @@ const header= (
  </div>
 );
 
-const footer= (
-    <div>
-        <footer>
-            <small>© 20xx Lourenço development. All rights reserved.</small>
-        </footer>
-      
-    </div>
-);
-const MainContent=(
-  <ol>
+ function Footer(){
+  return(   <div>
+      <footer>
+          <small>© 20xx Lourenço development. All rights reserved.</small>
+      </footer>
+    
+  </div>)
+}
+
+
+ function MainContent(){
+  return(
+      <ol>
       <li>It's a popular library, so I'll be 
       able to fit in with the cool kids!</li>
       <li>I'm more likely to get a job as a developer
       if I know React</li>
 </ol>
-);
+
+  )
+}
 
 const ex2= (
   <div>
 
     <div className="main-conteiner">
         {header}
-        {MainContent}
-        {footer}
+        <MainContent />
+      <Footer/>
     </div>
      
    
@@ -145,37 +150,52 @@ Challenge:
 - Add an `ul` inside the Header's `nav` and create
   the following `li`s: "Pricing", "About", & "Contact"
 */
-import Header from "./Header";
-
- 
- const ex3= (
-   <div>
- 
-     <div className="main-conteiner">
-         {Header}
-         <h1>Reasons I'm excited to learn React</h1>
-  
-        {MainContent}
-     
-         {footer}
-     </div>
-      
-    
-   </div>
-    
- );
- 
- //All Page render
-
-function  AllPage() {
-  return ( 
-    <div>
-      {ex1}
-      {ex2}
-      {ex3}
-    </div>
+function Header() {
+  return (
+      <div>
+          <nav className="nav">
+              <img className="react-image" src="./react-logo.png" alt="React logo" />
+              <ul className="nav-items" >
+                  <li>Pricing</li>
+                  <li>About</li>
+                  <li>Contact</li>
+              </ul>
+          </nav>
+      </div>
   )
 }
+
+function Ex3() {  // Renomeei de ex3 para Ex3
+  return (
+      <div>
+
+          <div className="main-conteiner">
+              <Header />
+              <h1>Reasons I'm excited to learn React</h1>
+
+              <MainContent />
+
+              <Footer/>
+          </div>
+
+
+      </div>
+
+  )
+}
+
+//All Page render
+
+function AllPage() {
+  return (
+      <div>
+          {ex1}
+          {ex2}
+          <Ex3 />  
+      </div>
+  )
+}
+
 
   
   ReactDOM.render(<AllPage/>, document.getElementById('root'));
