@@ -1,5 +1,8 @@
 
-
+//Component organization
+//import Header from "./Header";
+//import MainContent from "./MainContent";
+//import Footer from "./Footer";
 
 /*
 Challenge: Starting from scratch, build and render the 
@@ -186,7 +189,7 @@ function Ex3() {  // Renomeei de ex3 para Ex3
 
 //All Page render
 
-function AllPage() {
+function App() {
   return (
       <div>
           {ex1}
@@ -198,4 +201,4 @@ function AllPage() {
 
 
   
-  ReactDOM.render(<AllPage/>, document.getElementById('root'));
+  ReactDOM.render(<App/>, document.getElementById('root'));
